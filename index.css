@@ -1,0 +1,196 @@
+/*heading*/
+
+body {
+
+    background-color: rgba(132, 110, 88);
+
+}
+
+
+
+header{
+
+    background-color: rgb(132, 110, 88);
+    
+    }
+
+
+.meni {
+
+border-style: solid;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 45px;
+background-color: rgb(132, 110, 88);
+margin-top: 0px;
+
+
+
+}
+
+.button {
+
+display: inline-block;
+margin-left: 20%;
+
+
+
+
+
+}
+
+
+button {
+
+width: 100px;
+margin-top: 10px;
+
+
+
+}
+
+/*aside*/
+
+h1 {
+font-size: 75px;
+text-align: center;
+position: relative;
+padding: 10px;
+margin-right: 25%;
+margin-left: 25%;
+margin-top: 5%;
+
+}
+
+#moto_text {
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: italic;
+font-size: 25px;
+text-align: center;
+position: relative;
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 50px;
+
+
+
+}
+
+h2 {
+
+position: relative;
+margin-top: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: oblique;
+font-size: 25px;
+
+
+}
+
+h3 {
+
+    position: relative;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-size: 50px
+
+}
+
+.picture img {
+
+width: 100%;
+height: 500px;
+
+/*slide*/
+
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    left: 300px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.slides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    left: 300px;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.text-container {
+    width: 40%; 
+    position: relative;
+    bottom: 600px;
+}
+
+
+.text1 {
+
+    position: relative;
+    left: 200px;
+
+}
+
+.text2 {
+    font-size: 25px;
+    position: relative;
+    margin-left: 45px;
+}
+

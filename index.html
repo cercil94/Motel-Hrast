@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dobro dosli</title>
+</head>
+<body>
+    <nav>
+
+        <div class="meni">
+            <a href="#targetSection" class="button"><button>Sobe</button></a>
+            <a href="#targetSection" class="button"><button>Restoran</button></a>
+            <a href="#targetSection" class="button"><button>Sala</button></a>
+            
+        </div>
+
+    </nav>
+<header>
+    <h1>Motel Hrast</h1>
+
+    <p id="moto_text">-Vase utociste u srcu Srpca-</p>
+
+
+        <div class="picture">  
+
+            <img src="Fotos\AI_Picture.webp" alt="Picture of Motel Hrast">
+
+        </div>
+
+        <div id="text_id">
+
+            <h2>Dobrodošli u Motel Hrast, vaš idealan izbor za boravak u centru Srbca! Naša jedinstvena lokacija omogućava vam da budete na korak od svih važnih dešavanja u gradu, dok uživate u miru i udobnosti našeg smeštaja. Bez obzira da li ste poslovni putnik, turista ili lokalni stanovnik, Motel Hrast pruža savršenu kombinaciju udobnosti, praktičnosti i gostoprimstva.</h2>
+
+        </div>
+
+    </header>
+
+    <aside>
+
+        <div class="slideshow-container">
+
+            <div class="slides">
+                <img src="Fotos\AI_Room1.webp" alt="Motel Hrast Building">
+            </div>
+        
+            <div class="slides">
+                <img src="Fotos\AI_Room2.webp" alt="Cozy Motel Room">
+            </div>
+        
+            <div class="slides">
+                <img src="Fotos\AI_Room3.webp" alt="Another Cozy Motel Room">
+            </div>
+        
+            <div class="slides">
+                <img src="Fotos\AI_Room4.webp" alt="Modern Bathroom">
+            </div>
+        
+            <div class="slides">
+                <img src="Fotos\AI_WC1.webp" alt="Another Modern Bathroom">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+    </aside>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+        
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("slides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none"; 
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block"; 
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+        <div class="text-container">
+
+            <div class="text1">
+                <h3>-Sobe-</h3>
+            </div>
+
+            <div class="text2">
+                <p>U Motelu Hrast nudimo vam udobne i moderno opremljene sobe koje će zadovoljiti sve vaše potrebe, bilo da ste na poslovnom putu ili odmoru. Svaka soba je opremljena sa svim neophodnim sadržajima kako biste se osećali kao kod kuće. Naše sobe nude savršen spoj modernog dizajna i funkcionalnosti, osiguravajući vam miran i opuštajući boravak.</p>
+            </div>
+            
+        </div>
+
+    </aside>
+</header>
+</body>
+</html>
